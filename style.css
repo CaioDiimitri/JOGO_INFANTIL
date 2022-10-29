@@ -1,0 +1,382 @@
+/*TELA DE DE INICIO*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.container {
+    background-image: url(/img/back_principal.jpg);
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    margin-left: 25%;
+    border: 4px solid yellow;
+}
+
+.botoes {
+    display: inline-block;
+    position: relative;
+    left: 34%;
+    top: 70%;
+    
+        
+}
+
+.botaoprincipal{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: rgb(255, 250, 250);
+    padding:15px 30px;
+    font-size: 12px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botoes:hover{
+    background-color:white;
+    color:black;
+    border-radius: 20px;
+}
+
+/*TELA DO GAME*/
+
+
+.inicio{
+    background-image: url(/img/fundo_jogo.jpg);
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    margin-left: 25%;
+    border: 1px solid yellow;
+
+}
+
+.escolhas{
+    display: inline-block;
+    position: relative;
+    top: 80%;
+    margin: 40px;
+
+}
+
+.animais{
+    margin-left: 30px;
+    margin-top: -110px;
+    padding: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: 3px solid rgb(255, 254, 254);
+    border-radius: 20px;
+}
+
+.animais:hover{
+    background-color:white;
+    color:black;
+}
+
+.descriçao {
+    text-align: center;
+    position: relative;
+    top: -15%;
+    background-color:rgb(255, 255, 255);
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 8px;
+}
+
+/*TELA GAME OVER*/
+
+
+.gameOver{
+    background-image: url(/img/fundo_gameOver.jpg);
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    margin-left: 25%;
+    border: 1px solid yellow;
+
+}
+
+.recomeço{
+display: inline-block;
+    position: relative;
+    top: 80%;
+    margin-left: 250px;
+    color: white;
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: rgb(255, 250, 250);
+    padding:15px 30px;
+    font-size: 12px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.recomeço:hover{
+    background-color:white;
+    color:black;
+}
+
+ #anim{
+    text-align: center;
+    margin: 150px;
+    font-size: 80px;
+    color: yellow;
+    text-transform:capitalize;
+    font-weight: bolder;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform:translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/*TELA TUTORIAL*/
+
+.tutorial {
+    background-image: url(/img/tela_tutorial.jpg);
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    margin-left: 25%;
+    border: 1px solid yellow;
+}
+
+.avançar{
+
+    display: inline-block;
+    position: relative;
+    top: 90%;
+    margin-left: 250px;
+}
+
+.avançar:hover{
+    background-color:white;
+    color:black;
+    border-radius: 20px;
+}
+
+.texto {
+    display: inline-block;
+    position: relative;
+    top: 70%;
+    margin-left: 130px;
+}
+
+.legenda {
+    font-size: 20px;
+    color: rgb(255, 254, 254);
+    background-color: black;
+}
+
+/*TELA PARABENS*/
+
+.telaFinal {
+    background-image:url(/img/tela_parabens.jpg);
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    margin-left: 25%;
+    border: 1px solid yellow;
+}
+
+.escolhas2 {
+    display: inline-block;
+    position: relative;
+    top: 89%;
+    margin-left: 40px;
+}
+
+.textoFinal{
+    display: inline-block;
+    position: relative;
+    top: 68%;
+    margin-left: 155px;
+    text-transform: capitalize;
+}
+
+.botaoprincipal:hover{
+    background-color:white;
+    color:black;
+    border-radius: 20px;
+}
+
+/*CORPO DA PAGINA*/
+
+body{
+    background-color: black;
+}
+
+header{
+    border-bottom: 5px double yellow;
+    margin-bottom: 50px;
+}
+
+header .menu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo{
+    margin-left: 20px;
+    color: yellow;
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 50px;
+}
+
+
+header nav a:hover{
+    color:yellow;
+}
+
+.sinopse{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    border: 2px solid yellow;
+    width: 400px;
+    height: 70px;
+    margin-left: 35%;
+    background-color:rgb(19, 18, 18);
+    color: white;
+    padding-top: 10px;
+}
+
+/*TELA CREDITOS*/
+.fundo{
+    background-image: url(/img/fundo_gameOver.jpg);
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    margin-left: 25%;
+    border: 1px solid yellow;
+    overflow:hidden;
+    position: relative;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.credits{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    perspective: 450px;
+
+}
+
+.titles{
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    line-height: 1.rem;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 60s linear forwards;
+}
+
+.cred{
+    text-align: center;
+}
+
+.voltar{
+    display: inline-block;
+    position:relative;
+    z-index: 10;
+    top:10px;
+    margin-left: 250px;
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: rgb(255, 250, 250);
+    padding:15px 30px;
+    font-size: 12px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.voltar:hover{
+    background-color:white;
+    color:black;
+    border-radius: 20px;
+}
+
+.textoAnimado {
+    text-align: center;
+}
+
+.opacity{
+    background-color: black;
+    opacity: 0.5;
+}
+
+@keyframes scroll {
+    from {top: 500px; transform: translateZ(0) rotateX(20deg);}
+    to {top: -700px; transform: translateZ(-2000px) rotateX(21deg);}
+}
+
+
+/*TELA DE IDADES*/
+
+.niveis{
+    background-image: url(/img/fundo_classificaçaor.jpg);
+    width: 700px;
+    height: 500px;
+    align-items: center;
+    margin-left: 25%;
+    border: 1px solid yellow;
+
+}
+
+.altura{
+ display: inline-block;
+ position: relative;
+ top: 70%;
+ margin: 40px;
+    
+}
+
+/*CRONOMETRO NIVEL 3*/
+
+.cronometro{
+    position: relative;
+    margin-left: 45%;
+    margin-top: 20%;
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#timer{
+    color: white;
+}
